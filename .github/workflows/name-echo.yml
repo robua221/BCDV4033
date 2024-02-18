@@ -1,0 +1,11 @@
+name: Display Your Name
+
+on: push
+
+jobs:
+  echo-name:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Echo Your Name
+        run: echo "Hello, my name is Bard!"
