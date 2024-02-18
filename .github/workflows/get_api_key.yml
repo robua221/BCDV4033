@@ -1,0 +1,12 @@
+name: Get Secret API Key
+
+on: push
+
+jobs:
+  get-key:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Get API key from secrets
+        run: echo "API_KEY=${{ secrets.API_KEY }}" >> $GITHUB_ENV
+
