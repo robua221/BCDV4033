@@ -1,6 +1,7 @@
 {
   "name": "my-app",
   "description": "This is my first app",
+    "main": "simpleCalc.js",
   "scripts": {
     "test": "jest"
   },
