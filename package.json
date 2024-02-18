@@ -2,7 +2,6 @@
   "name": "my-app",
   "description": "This is my first app",
   "scripts": {
-    "start": "simpleCalc.js",
     "test": "jest"
   },
   "dependencies": {
