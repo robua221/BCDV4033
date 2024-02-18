@@ -1,0 +1,22 @@
+name: Build, Test, and Upload Artifacts
+
+on: push
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js 18
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+      - name: Install npm dependencies
+        run: npm install
+      - name: Run Jest tests
+        run: npm test
+      - name: Create and upload build artifacts (customize path)
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-artifacts
+          path: dist/ # Adjust based on your build output location
