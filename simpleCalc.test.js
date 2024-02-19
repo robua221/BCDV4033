@@ -13,7 +13,7 @@ describe("Calculator Tests", () => {
     // arrange and act
     var result = mathOperations.diff(10, 2);
 
-    // assert
+    // assertc
     expect(result).toBe(8);
   });
 
